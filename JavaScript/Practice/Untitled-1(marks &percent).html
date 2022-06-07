@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    a program to calculate total and percent and print them
+</body>
+<script type="text/javascript">
+    let name,percent,total=0 ,marks=[];
+    name=prompt("Enter your name");
+    for(let i=0;i<=4;i++){
+        marks[i]=prompt("Enter marks of sub ");
+        num = parseInt(marks[i])
+        total=total+num;
+        num = 0
+
+    }
+    percent=total/5;
+    console.log("Your name is ",name);
+    console.log("The total marks is ",total);
+    console.log("The percentage is ",percent);
+</script>
+</html>

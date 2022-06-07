@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin-left: 30px;">
+        Principal:<br>
+        <input type="number" id="p"><br>
+        Time:<br>
+        <input type="number" id="t"><br>
+        Rate:<br>
+        <input type="number" id="r"><br>
+
+        <button onclick="calculateInterest()"> calculate Interest</button>
+        <h3 id="info"></h3>
+    </div>
+</body>
+<script type="text/javascript">
+    function calculateInterest(){
+        let principal=document.getElementById('p').value;
+        let rate=document.getElementById('r').value;
+        let time=document.getElementById('t').value;
+
+        let si=(principal*rate*time)/100;
+
+        document.getElementById('info').innerHTML=si;
+    }
+</script>
+</html>
